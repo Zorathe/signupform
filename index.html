@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>SignIn Page</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+ 
+</head>
+<body>
+    <div class="left">
+        <div class="image-container">
+            <img src="./asphalt-1867667_1920.jpg">
+        </div>
+        
+    </div>
+    <div class="right">
+        <div class="title">Sign Up</div>
+        <form action="#" method="get">
+            <div class="em">
+                
+                <input type="email" id="user_email" name="user_email" pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$"placeholder="Email"  required>
+                <span class="error" aria-live="polite">&emsp;&emsp;</span>
+
+            </div>
+            <div>
+                <input type="username" id="user_name" name="user_name" placeholder="Username" required>
+            </div>
+            <div>
+                <input type="password" id="user_password" name="user_password" placeholder="Password" minlength=8 required> 
+                <span class="info" aria-live="polite"></span>
+            </div>
+            <div>
+                <input type="password" id="confirm_user_password" name="confirm_user_password" placeholder="Confirm Password"required>
+               
+                <span class="mismatch" aria-live="polite"></span> <br><br>
+            </div>
+            
+                <button type="submit" id="sign">Sign Up</button>
+            
+        </form>
+
+        <div class="haver">Have an account? 
+            <a href="https://github.com/Zorathe">Sign In</a>
+        </div>
+    </div>
+</body>
+</html>
